@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body { /*Cuerpo*/
+    /*Color de Fondo*/
+    background-color: #F5F5F5;
+}
+
+header { /*Cabezal*/
+    background-image: url(img-far/nav-bar4.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 23vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo PRINCIPAL CB-NUEVO CSS */
+.logo-cb {
+    width: 330px;
+    margin-top: 0px;
+    margin-left: 20px; /* Ajusta según sea necesario */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a { /*MENU DE RESERVAR, EQUIPOS CONTACTO*/
+    font-size: 18px;
+    top: 0px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold; 
+}
+.menu .navbar ul li a:hover {
+    color: #120491;
+    text-decoration: underline;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px; 
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    display: flex;
+}
+.content {
+    padding: 100px 150px 0px 0px;
+}
+.content h1 {    /* Far */
+    color:#000272;
+    font-size: 55px;
+    text-transform: sans-serif;
+    font-weight: 500;
+    line-height: 55px;
+    font-weight: bold;
+} 
+.content h2 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.content p {    /* SIGNIFICA: FAR.... */
+    margin-top: 25px; 
+    /*color: #f0bc21; */
+     color: rgb(58, 85, 59); 
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.btn-1 { /* Información 1 */
+    display: inline-block;
+    /*background-color: rgba(170, 177, 255, 0.3);*/
+    background-color: rgb(26, 83, 207);
+    border: 1px solid #00696d;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+.btn-1:hover { /*Al posar el Mouse en btn-1 */
+    background-color: rgb(52, 225, 231);
+    
+}
+
+footer { /* Pie de Pág.*/
+    padding: 200px 0px 30px 0px;
+    background-image: url(img-far/footer.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-price { /*Cuadro Especial abajo*/ /*cOSTOS DE ASISTENCIA*/
+    padding: 35px;
+    text-align: center;
+    background-color: rgb(157, 212, 238);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    margin: 0px 150px 0px 0px;
+    color: #0E0E0E;
+}
+.info-price h2 { /*Titulo de Cuadro Especial*/
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000;
+}
+.price {    /*$30 - 210bs*/
+    font-size: 14px;
+    color: rgb(233, 105, 0) !important;
+    margin-bottom: 10px;
+}
+.info-price p { /* Mensaje Descriptivo Sobre El Contenido Que Puede Ir Aquí. */
+    font-size: 16px;
+    font-weight: bold;
+    color: #525254;
+}
+
+
+/*Apartado de Precios*/
+.info-txt { /*Lista de Precios*/
+    margin-left: 35px;
+    color: #383737;
+    font-weight: bold;
+}
+.info-txt p { /*Mensaje De Lista De Precios*/
+    color: #c20000;
+}
+
+
+
+.linea-divisora{ /*Línia divisora */
+    margin: 45px 0px;
+    border: 5px solid #07004b;
+    
+}
+
+.contened
+/*NavBar - Correo Nosotros Ubicación*/
+.enlace {
+    display: flex;
+}
+.enlace li a {
+    display: block;
+    margin: 20px;
+}
+.enlace li a { /*Correo Nosotros Ubicación*/
+    color: #ffffff;
+    font-weight: bold;
+}
+.enlace li a:hover {
+    color: #00c2e4
+}
+/*Función del Caudro de Imágenes*/
+/* Estilos para la clase imagen-fila */
+.imagen-fila {
+    display: flex;
+    align-items: center; /* Alinea las imágenes y los botones verticalmente */
+    justify-content: space-between; /* Distribuye las imágenes uniformemente en la fila */
+}
+
+
+/* Estilos para los botones de navegación */
+.btn-navegacion-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ajusta según sea necesario */
+}
+
+.btn-navegacion {
+    background-color: #b4afafe5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 50px;
+}
+
+
+/* Alinea el primer botón a la izquierda y el segundo a la derecha */
+.btn-izquierdo {
+    margin-right: 100px;
+}
+
+.btn-derecho {
+    margin-left: 10px;
+}
+
+/* Establece un tamaño máximo para todas las imágenes en la fila */
+/*Cuadro de Imagenes*/
+.imagen-container img {
+    max-width: 200px; /* Ajusta el tamaño máximo según tus necesidades */
+    height: 200px;  /* Tamaño predeterminado de altura */      /* height: auto; Mantiene la proporción de la imagen */
+    border: 2px solid rgba(0, 194, 16, 0) ;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.container .enlaces .contenedor-imagen-marcas hr{
+    margin: 45px 0px;
+    border: 4px solid #07004b;
+}
+
+
+/*Np funciona*/
+.contedor-pies{
+    padding: 35px;
+    text-align: center;
+    background-color: rgb(157, 212, 238);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    margin: 0px 150px 0px 0px;
+    color: #0E0E0E;
+
+}
+
+
+
+

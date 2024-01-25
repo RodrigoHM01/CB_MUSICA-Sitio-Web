@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB_MUSICA-Sitio-Web</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-top: 20px;
+            margin-left: 70px; 
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .subfila {
+            margin-left: 20px;
+        }
+
+        .verde {
+            color: green;
+        }
+
+        .amarillo {
+            color: rgb(228, 228, 21);
+        }
+
+        .rojo {
+            color: red;
+        }
+
+        h2 {
+            margin-left: 50px;
+        }
+        h3 {
+            margin-left: 50px;
+        }
+        label {
+            margin-left: 50px;
+        }
+        table tr { /*Color de los productos*/
+            background-color: rgba(5, 5, 72, 0);
+        }
+        th[colspan="3"]:first-child {
+           /* background-color: rgb(173, 173, 173);*/
+            background-color: rgba(178, 211, 255, 0.929);
+            color: rgb(255, 255, 255);
+          
+        }
+
+
+        .menu .navbar ul li {
+            position: relative;
+            float: left;
+        }
+        .menu .navbar ul li a { /*MENU DE RESERVAR, EQUIPOS CONTACTO*/
+            font-size: 18px;
+            top: 0px;
+            padding: 20px;
+            color: #044099;
+            display: block;
+            font-weight: bold; 
+        }
+        .menu .navbar ul li a:hover {
+            /*color: #120491;*/
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="menu container">
+            <img src="images/Logo con identificativo/Variación de color 1 horizontal.png" alt="" class="logo-cb">
+           
+            <a href="#inicio" class="logo">
+                <h1>Inventario</h1>
+            </a>
+
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu-btn.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Principal.html" id="">Menú Principal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <br>
+    <h2>Inventario Actualizado de Equipos</h2>
+    <br>
+    
+    <h3>Prestar/Devolver:</h3>
+    <label for="marca">Marca:</label>
+     <!-- ELECCIÓN DE EQUIPOS -->
+    <select id="marca">
+        <option value="">Seleccionar un Producto</option>
+            <!-- CONSOLAS -->
+        <option value="ConsolaBehringerXenyxX1204">Consola Behringer Xenyx X1204</option>
+        <option value="ConsolaBehringerEurodeskSX2442">Consola Behringer Eurodesk SX2442</option>
+        <option value="ConsolaSoundcraftSignature16">Consola Soundcraft Signature 16</option>
+        <option value="ConsolaMidasM32">Consola Midas M32</option>
+            <!-- CABLES -->
+        <option value="CableXLR-XLR">Cable XLR-XLR</option>
+        <option value="CableTS-TS">Cable TS-TS</option>
+        <option value="CableXLR-TRS">CableXLR-TRS</option>
+        <option value="CableSpakon">CableSpakon</option>
+        <option value="CableenY(XLRHEMBRA-2XLRMACHOS)">Cable en Y ( XLR HEMBRA - 2 XLR MACHOS)</option>
+        <option value="CableAuxiliar">Cable Auxiliar</option>
+            <!-- PARLANTES -->
+        <option value="F1MOD812+CAJA">F1 MOD 812 + CAJA</option>
+        <option value="F1MOD812SUBWOOFER+CAJA ">F1 MOD 812 SUBWOOFER + CAJA</option>
+        <option value="L1MODIIPowerstand+ESTUCHE">L1 MOD II Powerstand + ESTUCHE</option>
+        <option value="L1MODIIDRIVERS+ESTUCHE">L1 MOD II DRIVERS + ESTUCHE</option>
+        <option value="BAJOB2+FUNDA">BAJO B2 + FUNDA</option>
+        <option value="L1COMPACT+ESTUCHE">L1 COMPACT + ESTUCHE</option>
+        <option value="L1COMPACTEXTENSIÓN+ESTUCHE">L1 COMPACT EXTENSIÓN + ESTUCHE</option>
+        <option value="S1PRO+FUNDA">S1 PRO + FUNDA</option>
+            <!-- MICRÓFONOS DE MANO -->
+        <option value="MicrofonoShureSM58">MicrófonoShure SM58</option>
+        <option value="MicrofonoShureBeta58A">Micrófono Shure Beta58A</option>
+        <option value="MicrofonoShurePG58">Micrófono Shure PG58</option>
+        <option value="MicrofonoBehringerXM1800">Micrófono Behringer XM1800</option>
+        <option value="MicrofonoInalambrico">Micrófono Inalámbrico</option>
+        <option value="KitMicrofonoInalambrico">Kit micrófono inalámbrico doble Shure Beta 87</option>
+            <!-- GUITARRAS -->
+        <option value="GuitarraFender">Guitarra Fender</option>
+        <option value="GuitarraYamaha">Guitarra Yamaha</option>
+        <option value="GuitarraPalo">Guitarra de Palo</option>
+            <!-- BAJO -->
+        <option value="BajoIbanezGio">Bajo Ibanez Gio</option>
+        <option value="BajoIbanezSDGR">Bajo Ibanez SDGR</option>
+        <option value="BajoCondorXB25A">Bajo Condor XB25A</option>
+        <option value="Parlante+cajadebajoHartke">Parlante + caja de bajo Hartke</option>
+        <option value="CabezaldebajoHartke">Cabezal de bajo Hartke</option>
+        <option value="AmplificadorFenderRumble40">Amplificador Bajo Fender Rumble 40</option>
+            <!-- TECLADO -->
+        <option value="TecladoKorgKross1">Teclado Korg Kross 1</option>
+        <option value="TecladoKorgKross2">Teclado Korg Kross 2</option>
+        <option value="TecladoPedalCherub">Pedal para Teclado Cherub</option>
+        <option value="TecladoEstucheYamaha">Estuche de Teclado Yamaha</option>
+            <!-- MICRÓFONOS BATERIA -->
+        <option value="SM57+ESTUCHE">SM57 + ESTUCHE</option>
+        <option value="PGA98D">PGA 98D</option>
+        <option value="PG81">PG81</option>
+        <option value="PG56">PG56</option>
+        <option value="BETA52A">BETA 52A</option>
+        <option value="PG52">PG52</option>
+        <option value="CLAMPLARGO">CLAMPLARGO</option>
+        <option value="CLAMPCORTO">CLAMP CORTO</option>
+        <option value="AbrazaderadeMicrófono">Abrazadera de Micrófono</option>
+        <option value="LlaveAlem">Llave Alem</option>
+        <option value="EstucheShureMicrófonosdeBateria">Estuche Shure Micrófonos de Bateria</option>
+        <option value="EstucheRígidoMicrófonosdeBateria">Estuche Rígido Micrófonos de Bateria</option>
+            <!-- BATERIA -->
+        <option value="BateriaGretsch">Bateria Gretsch</option>
+        <option value="BateriaMapex">Bateria Mapex</option>
+            <!-- BATERIA & PERCUSIÓN -->
+        <option value="BomboMapex">Bombo Mapex</option>
+        <option value="CajaMapex">Caja Mapex</option>
+        <option value="Tom1Mapex">Tom 1 Mapex</option>
+        <option value="Tom2Mapex">Tom 2 Mapex</option>
+        <option value="ChanchaMapex">Chancha Mapex</option>
+        <option value="PedaldeBomboMapex">Pedal de Bombo Mapex</option>
+        <option value="BomboGretsch">Bombo Gretsch</option>
+        <option value="CajaGretsch">Caja Gretsch</option>
+        <option value="Tom1Gretsch">Tom 1 Gretsch</option>
+        <option value="Tom2Gretsch">Tom 2 Gretsch</option>
+        <option value="ChanchaGretschgrande">Chancha Gretsch grande</option>
+        <option value="ChanchaGretschpequeña">Chancha Gretsch pequeña</option>
+        <option value="PedaldebomboGretsch">Pedal de bombo Gretsch</option>
+        <option value="HihatSabian">Hihat Sabian</option>
+        <option value="CrashSabian16'">Crash Sabian 16"</option>
+        <option value="CrashSabian18'">Crash Sabian 18"</option>
+        <option value="RideSabian20'">Ride Sabian 20"</option>
+        <option value="FundasparaBateriaPercuInnovacion(1decaja,3ton,2deplatilloy1debombo)">Fundas para Bateria Percu Innovacion (1 de caja, 3 ton, 2 de platillo y 1 de bombo)</option>
+        <option value="CajónPeruano">Cajón Peruano</option>
+        <option value="BomboCriollo">Bombo Criollo</option>
+            <!-- OTROS -->
+        <option value="MedusaQuiklock">Medusa Quiklock</option>
+        <option value="EstabilizadordecorrienteAtomlux">Estabilizador de corriente Atomlux</option>
+        <option value="PoderesEuropowerEP2500">Poderes Europower EP2500</option>
+        <option value="PoderPeavey">Poder Peavey</option>
+        <option value="PoderCrestCC4000">Poder Crest CC4000</option>
+        <option value="ProcesadorBehringerVirtualizerPRO">Procesador Behringer Virtualizer PRO</option>
+        <option value="DeltadistrubuidordeAudio">Delta distrubuidor de Audio</option>
+        <option value="CajaRígidadeApoyo">Caja Rígida de Apoyo</option>
+        <option value="CajadePedestales">Caja de Pedestales</option>        
+        <option value="PedastaldeS1">Pedastal de S1</option>
+        <option value="PedastalesdeMicrófono">Pedastales de Micrófono</option>
+        <option value="Atriles">Atriles</option>
+        <option value="PedastaldeTecladoconBrazos">Pedastal de Teclado con Brazos</option>
+        <option value="Regletas">Regletas</option>
+        <option value="RegletaIndustrial">Regleta Industrial</option>
+        <option value="CajaDirecta">Caja Directa</option>
+        <option value="PedestaldeTecladoEstándar">Pedestal de Teclado Estándar</option>
+        
+        <!-- <option value=""></option> -->
+    </select>
+    <label for="operacion">Operación:</label>
+    <select id="operacion">
+        <option value="prestar">Prestar</option>
+        <option value="devolver">Devolver</option>
+    </select>
+    <input type="number" id="cantidadOperacion" placeholder="Cantidad">
+    <button onclick="realizarOperacion()">Realizar Operación</button>
+
+
+
+
+
+
+
+    
+
+
+     <!-- INVENTARIOS DE EQUIPOS -->
+    <table id="inventario">
+         <!-- CONSOLAS -->
+         <tr>
+            <th colspan="3">Categoria: Consolas</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Consola Behringer Xenyx X1204</td>
+            <td id="cantidadConsolaBehringerXenyxX1204Disponibles" class="verde">2</td>
+            <td id="cantidadConsolaBehringerXenyxX1204Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Consola Behringer Eurodesk SX2442</td>
+            <td id="cantidadConsolaBehringerEurodeskSX2442Disponibles" class="verde">1</td>
+            <td id="cantidadConsolaBehringerEurodeskSX2442Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Consola Soundcraft Signature 16</td>
+            <td id="cantidadConsolaSoundcraftSignature16Disponibles" class="verde">1</td>
+            <td id="cantidadConsolaSoundcraftSignature16Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Consola Midas M32</td>
+            <td id="cantidadConsolaMidasM32Disponibles" class="verde">1</td>
+            <td id="cantidadConsolaMidasM32Prestadas">0</td>
+        </tr>
+         <!-- CABLES -->
+        <tr>
+            <th colspan="3">Categoria: Cables</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Cable XLR-XLR</td>
+            <td id="cantidadCableXLR-XLRDisponibles" class="verde">40</td>
+            <td id="cantidadCableXLR-XLRPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Cable TS-TS</td>
+            <td id="cantidadCableTS-TSDisponibles" class="verde">10</td>
+            <td id="cantidadCableTS-TSPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Cable XLR-TRS</td>
+            <td id="cantidadCableXLR-TRSDisponibles" class="verde">3</td>
+            <td id="cantidadCableXLR-TRSPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Cable Spakon</td>
+            <td id="cantidadCableSpakonDisponibles" class="verde">3</td>
+            <td id="cantidadCableSpakonPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Cable en Y ( XLR HEMBRA - 2 XLR MACHOS)</td>
+            <td id="cantidadCableenY(XLRHEMBRA-2XLRMACHOS)Disponibles" class="verde">1</td>
+            <td id="cantidadCableenY(XLRHEMBRA-2XLRMACHOS)Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Cable Auxiliar</td>
+            <td id="cantidadCableAuxiliarDisponibles" class="verde">1</td>
+            <td id="cantidadCableAuxiliarPrestadas">0</td>
+        </tr>
+        <!-- PARLANTES -->
+        <tr>
+            <th colspan="3">Categoria: Parlantes</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>F1 MOD 812 + CAJA</td>
+            <td id="cantidadF1MOD812+CAJADisponibles" class="verde">6</td>
+            <td id="cantidadF1MOD812+CAJAPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>F1 MOD 812 SUBWOOFER + CAJA</td>
+            <td id="cantidadF1MOD812SUBWOOFER+CAJADisponibles" class="verde">6</td>
+            <td id="cantidadF1MOD812SUBWOOFER+CAJAPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>L1 MOD II Powerstand + ESTUCHE</td>
+            <td id="cantidadL1MODIIPowerstand+ESTUCHEDisponibles" class="verde">2</td>
+            <td id="cantidadL1MODIIPowerstand+ESTUCHEPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>L1 MOD II DRIVERS + ESTUCHE</td>
+            <td id="cantidadL1MODIIDRIVERS+ESTUCHEDisponibles" class="verde">2</td>
+            <td id="cantidadL1MODIIDRIVERS+ESTUCHEPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>BAJO B2 + FUNDA</td>
+            <td id="cantidadBAJOB2+FUNDADisponibles" class="verde">2</td>
+            <td id="cantidadBAJOB2+FUNDADPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>L1 COMPACT + ESTUCHE</td>
+            <td id="cantidadL1COMPACT+ESTUCHEDisponibles" class="verde">3</td>
+            <td id="cantidadL1COMPACT+ESTUCHEPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>L1 COMPACT EXTENSIÓN + ESTUCHE</td>
+            <td id="cantidadL1COMPACTEXTENSIÓN+ESTUCHEDisponibles" class="verde">3</td>
+            <td id="cantidadL1COMPACTEXTENSIÓN+ESTUCHEPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>S1 PRO + FUNDA</td>
+            <td id="cantidadS1PRO+FUNDADisponibles" class="verde">1</td>
+            <td id="cantidadS1PRO+FUNDADisponiblesPrestadas">0</td>
+        </tr>
+        <!-- MICRÓFONOS DE MANO -->
+        <tr>
+            <th colspan="3">Categoria: Micrófonos de Mano</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Shure SM58</td>
+            <td id="cantidadMicrofonoShureSM58Disponibles" class="verde">1</td>
+            <td id="cantidadMicrofonoShureSM58Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Shure Beta58A</td>
+            <td id="cantidadMicrofonoShureBeta58ADisponibles" class="verde">5</td>
+            <td id="cantidadMicrofonoShureBeta58APrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Shure PG58</td>
+            <td id="cantidadMicrofonoShurePG58Disponibles" class="verde">2</td>
+            <td id="cantidadMicrofonoShurePG58Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Behringer XM1800</td>
+            <td id="cantidadMicrofonoBehringerXM1800Disponibles" class="verde">4</td>
+            <td id="cantidadMicrofonoBehringerXM1800Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Micrófono inalámbrico</td>
+            <td id="cantidadMicrofonoInalambricoDisponibles" class="verde">1</td>
+            <td id="cantidadMicrofonoInalambricoPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Kit micrófono inalámbrico doble Shure Beta 87 (transformador, antena y estuche)</td>
+            <td id="cantidadKitMicrofonoInalambricoDisponibles" class="verde">1</td>
+            <td id="cantidadKitMicrofonoInalambricoPrestadas">0</td>
+        </tr>
+         <!-- GUITARRAS -->
+        <tr>
+            <th colspan="3">Categoria: Guitarra</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Fender</td>
+            <td id="cantidadGuitarraFenderDisponibles" class="verde">1</td>
+            <td id="cantidadGuitarraFenderPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Yamaha</td>
+            <td id="cantidadGuitarraYamahaDisponibles" class="verde">1</td>
+            <td id="cantidadGuitarraYamahaPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Palo</td>
+            <td id="cantidadGuitarraPaloDisponibles" class="verde">1</td>
+            <td id="cantidadGuitarraPaloPrestadas">0</td>
+        </tr>
+        <!-- BAJO -->
+        <tr>
+            <th colspan="3">Categoria: Bajo</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Ibanez Gio</td>
+            <td id="cantidadBajoIbanezGioDisponibles" class="verde">1</td>
+            <td id="cantidadBajoIbanezGioPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Ibanez SDGR</td>   
+            <td id="cantidadBajoIbanezSDGRDisponibles" class="verde">1</td>
+            <td id="cantidadBajoIbanezSDGRPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Condor XB 25A</td> 
+            <td id="cantidadBajoCondorXB25ADisponibles" class="verde">1</td>
+            <td id="cantidadBajoCondorXB25APrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Parlante + caja de bajo Hartke</td> 
+            <td id="cantidadParlante+cajadebajoHartkeDisponibles" class="verde">1</td>
+            <td id="cantidadParlante+cajadebajoHartkePrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Cabezal de bajo Hartke</td> 
+            <td id="cantidadCabezaldebajoHartkeDisponibles" class="verde">1</td>
+            <td id="cantidadCabezaldebajoHartkePrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Amplificador Fender Rumble 40</td> 
+            <td id="cantidadAmplificadorFenderRumble40Disponibles" class="verde">1</td>
+            <td id="cantidadAmplificadorFenderRumble40Prestadas">0</td>
+        </tr>
+        <!-- TECLADO -->
+        <tr>
+            <th colspan="3">Categoria: Teclado</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Korg Kross 1</td>
+            <td id="cantidadTecladoKorgKross1Disponibles" class="verde">1</td>
+            <td id="cantidadTecladoKorgKross1Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Korg Kross 2</td>
+            <td id="cantidadTecladoKorgKross2Disponibles" class="verde">1</td>
+            <td id="cantidadTecladoKorgKross2Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Pedal para Teclado Cherub</td>
+            <td id="cantidadTecladoPedalCherubDisponibles" class="verde">1</td>
+            <td id="cantidadTecladoPedalCherubPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Estuche de Teclado Yamaha</td>
+            <td id="cantidadTecladoEstucheYamahaDisponibles" class="verde">1</td>
+            <td id="cantidadTecladoEstucheYamahaPrestadas">0</td>
+        </tr>
+         <!-- MICRÓFONOS BATERIA -->
+         <tr>
+            <th colspan="3">Categoria: Micrófonos de Bateria</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>SM57 + ESTUCHE</td>
+            <td id="cantidadSM57+ESTUCHEDisponibles" class="verde">1</td>
+            <td id="cantidadSM57+ESTUCHEPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>PGA 98D</td>
+            <td id="cantidadPGA98DDisponibles" class="verde">3</td>
+            <td id="cantidadPGA98DPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>PG81</td>
+            <td id="cantidadPG81Disponibles" class="verde">2</td>
+            <td id="cantidadPG81Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>PG56</td>
+            <td id="cantidadPG56Disponibles" class="verde">3</td>
+            <td id="cantidadPG56Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>BETA 52A</td>
+            <td id="cantidadBETA52ADisponibles" class="verde">3</td>
+            <td id="cantidadBETA52APrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>PG 52</td>
+            <td id="cantidadPG52Disponibles" class="verde">1</td>
+            <td id="cantidadPG52Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>CLAMP LARGO</td>
+            <td id="cantidadCLAMPLARGODisponibles" class="verde">2</td>
+            <td id="cantidadCLAMPLARGOPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>CLAMP CORTO</td>
+            <td id="cantidadCLAMPCORTODisponibles" class="verde">3</td>
+            <td id="cantidadCLAMPCORTOPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Abrazadera de Micrófono</td>
+            <td id="cantidadAbrazaderadeMicrófonoDisponibles" class="verde">13</td>
+            <td id="cantidadAbrazaderadeMicrófonoPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Llave Alem</td>
+            <td id="cantidadLlaveAlemDisponibles" class="verde">2</td>
+            <td id="cantidadLlaveAlemPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Estuche Shure Micrófonos de Bateria</td>
+            <td id="cantidadEstucheShureMicrófonosdeBateriaDisponibles" class="verde">1</td>
+            <td id="cantidadEstucheShureMicrófonosdeBateriaPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Estuche Rígido Micrófonos de Bateria</td>
+            <td id="cantidadEstucheRígidoMicrófonosdeBateriaDisponibles" class="verde">1</td>
+            <td id="cantidadEstucheRígidoMicrófonosdeBateriaPrestadas">0</td>
+        </tr>
+        <!-- BATERIA -->
+        <tr>
+            <th colspan="3">Categoria: Bateria</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Gretsch</td>
+            <td id="cantidadBateriaGretschDisponibles" class="verde">1</td>
+            <td id="cantidadBateriaGretschPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Mapex</td>
+            <td id="cantidadBateriaMapexDisponibles" class="verde">1</td>
+            <td id="cantidadBateriaMapexPrestadas">0</td>
+        </tr>
+         <!-- BATERIA & PERCUSIÓN -->
+        <tr>
+            <th colspan="3">Categoria: Bateria & Percusión</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Bombo Mapex</td>
+            <td id="cantidadBomboMapexDisponibles" class="verde">1</td>
+            <td id="cantidadBomboMapexPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Caja Mapex</td>
+            <td id="cantidadCajaMapexDisponibles" class="verde">1</td>
+            <td id="cantidadCajaMapexPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Tom 1 Mapex</td>
+            <td id="cantidadTom1MapexDisponibles" class="verde">1</td>
+            <td id="cantidadTom1MapexPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Tom 2 Mapex</td>
+            <td id="cantidadTom2MapexDisponibles" class="verde">1</td>
+            <td id="cantidadTom2MapexPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Chancha Mapex</td>
+            <td id="cantidadChanchaMapexDisponibles" class="verde">1</td>
+            <td id="cantidadChanchaMapexPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Pedal de Bombo Mapex</td>
+            <td id="cantidadPedaldeBomboMapexDisponibles" class="verde">1</td>
+            <td id="cantidadPedaldeBomboMapexPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Bombo Gretsch</td>
+            <td id="cantidadBomboGretschDisponibles" class="verde">1</td>
+            <td id="cantidadBomboGretschPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Caja Gretsch</td>
+            <td id="cantidadCajaGretschDisponibles" class="verde">1</td>
+            <td id="cantidadCajaGretschPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Tom 1 Gretsch</td>
+            <td id="cantidadTom1GretschDisponibles" class="verde">1</td>
+            <td id="cantidadTom1GretschPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Tom 2 Gretsch</td>
+            <td id="cantidadTom2GretschDisponibles" class="verde">1</td>
+            <td id="cantidadTom2GretschPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Chancha Gretsch grande</td>
+            <td id="cantidadChanchaGretschgrandeDisponibles" class="verde">1</td>
+            <td id="cantidadChanchaGretschgrandePrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Chancha Gretsch pequeña</td>
+            <td id="cantidadChanchaGretschpequeñaDisponibles" class="verde">1</td>
+            <td id="cantidadChanchaGretschpequeñaPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Pedal de bombo Gretsch</td>
+            <td id="cantidadPedaldebomboGretschDisponibles" class="verde">1</td>
+            <td id="cantidadPedaldebomboGretschPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Hihat Sabian</td>
+            <td id="cantidadHihatSabianDisponibles" class="verde">1</td>
+            <td id="cantidadHihatSabianPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Crash Sabian 16"</td>
+            <td id="cantidadCrashSabian16'Disponibles" class="verde">1</td>
+            <td id="cantidadCrashSabian16'Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Crash Sabian 18"</td>
+            <td id="cantidadCrashSabian18'Disponibles" class="verde">1</td>
+            <td id="cantidadCrashSabian18'Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Ride Sabian 20"</td>
+            <td id="cantidadRideSabian20'Disponibles" class="verde">1</td>
+            <td id="cantidadRideSabian20'Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Fundas para Bateria Percu Innovacion (1 de caja, 3 ton, 2 de platillo y 1 de bombo)</td>
+            <td id="cantidadFundasparaBateriaPercuInnovacion(1decaja,3ton,2deplatilloy1debombo)Disponibles" class="verde">4</td>
+            <td id="cantidadFundasparaBateriaPercuInnovacion(1decaja,3ton,2deplatilloy1debombo)Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Cajón Peruano</td>
+            <td id="cantidadCajónPeruanoDisponibles" class="verde">1</td>
+            <td id="cantidadCajónPeruanoPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Bombo Criollo</td>
+            <td id="cantidadBomboCriolloDisponibles" class="verde">1</td>
+            <td id="cantidadBomboCriolloPrestadas">0</td>
+        </tr>
+         <!-- OTROS -->
+        <tr>
+            <th colspan="3">Categoria: Otros</th>
+        </tr>
+        <tr>
+            <th>Productos</th>
+            <th>Cantidad Disponible</th>
+            <th>Cantidad Prestada</th>
+        </tr>
+        <tr class="subfila">
+            <td>Medusa Quiklock</td>
+            <td id="cantidadMedusaQuiklockDisponibles" class="verde">1</td>
+            <td id="cantidadMedusaQuiklockPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Estabilizador de corriente Atomlux</td>
+            <td id="cantidadEstabilizadordecorrienteAtomluxDisponibles" class="verde">3</td>
+            <td id="cantidadEstabilizadordecorrienteAtomluxPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Poderes Europower EP2500</td>
+            <td id="cantidadPoderesEuropowerEP2500Disponibles" class="verde">1</td>
+            <td id="cantidadPoderesEuropowerEP2500Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Poder Peavey</td>
+            <td id="cantidadPoderPeaveyDisponibles" class="verde">1</td>
+            <td id="cantidadPoderPeaveyPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Poder Crest CC4000</td>
+            <td id="cantidadPoderCrestCC4000Disponibles" class="verde">1</td>
+            <td id="cantidadPoderCrestCC4000Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Procesador Behringer Virtualizer PRO</td>
+            <td id="cantidadProcesadorBehringerVirtualizerPRODisponibles" class="verde">1</td>
+            <td id="cantidadProcesadorBehringerVirtualizerPROPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Delta distrubuidor de Audio</td>
+            <td id="cantidadDeltadistrubuidordeAudioDisponibles" class="verde">1</td>
+            <td id="cantidadDeltadistrubuidordeAudioPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Caja Rígida de Apoyo</td>
+            <td id="cantidadCajaRígidadeApoyoDisponibles" class="verde">1</td>
+            <td id="cantidadCajaRígidadeApoyoPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Caja de Pedestales</td>
+            <td id="cantidadCajadePedestalesDisponibles" class="verde">1</td>
+            <td id="cantidadCajadePedestalesPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Pedastal de S1</td>
+            <td id="cantidadPedastaldeS1Disponibles" class="verde">1</td>
+            <td id="cantidadPedastaldeS1Prestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Pedastales de Micrófono</td>
+            <td id="cantidadPedastalesdeMicrófonoDisponibles" class="verde">9</td>
+            <td id="cantidadPedastalesdeMicrófonoPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Atriles</td>
+            <td id="cantidadAtrilesDisponibles" class="verde">3</td>
+            <td id="cantidadAtrilesPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Pedastal de Teclado con Brazos</td>
+            <td id="cantidadPedastaldeTecladoconBrazosDisponibles" class="verde">1</td>
+            <td id="cantidadPedastaldeTecladoconBrazosPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Regletas</td>
+            <td id="cantidadRegletasDisponibles" class="verde">18</td>
+            <td id="cantidadRegletasPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Regleta Industrial</td>
+            <td id="cantidadRegletaIndustrialDisponibles" class="verde">2</td>
+            <td id="cantidadRegletaIndustrialPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Caja Directa</td>
+            <td id="cantidadCajaDirectaDisponibles" class="verde">4</td>
+            <td id="cantidadCajaDirectaPrestadas">0</td>
+        </tr>
+        <tr class="subfila">
+            <td>Pedestal de Teclado Estándar</td>
+            <td id="cantidadPedestaldeTecladoEstándarDisponibles" class="verde">2</td>
+            <td id="cantidadPedestaldeTecladoEstándarPrestadas">0</td>
+        </tr>
+
+
+
+ <!-- Para Organizar 
+ <tr>
+    <th colspan="3">Producto: </th>
+</tr>
+<tr>
+    <th>Marcas</th>
+    <th>Cantidad Disponible</th>
+    <th>Cantidad Prestada</th>
+</tr>
+<tr class="subfila">
+    <td></td>
+    <td id="cantidadDisponibles" class="verde">1</td>
+    <td id="cantidadPrestadas">0</td>
+</tr>
+
+-->
+
+
+    </table>
+    <br><br>
+
+
+    <br><br><br><br><br><br>
+
+     <!-- Funcion Prestar/Devolver con algoritmo de colores al desarrollo -->
+    <script>
+        function realizarOperacion() {
+            var productoSeleccionado = document.getElementById("marca").value;
+            var operacion = document.getElementById("operacion").value;
+            var cantidadOperacion = parseInt(document.getElementById("cantidadOperacion").value);
+
+            // Obtener las cantidades disponibles y prestadas del producto seleccionado
+            var cantidadDisponibleMarca = parseInt(document.getElementById("cantidad" + productoSeleccionado + "Disponibles").innerHTML);
+            var cantidadPrestadaMarca = parseInt(document.getElementById("cantidad" + productoSeleccionado + "Prestadas").innerHTML);
+
+            // Guardar la cantidad original disponible antes de realizar la operación
+            var cantidadOriginalDisponible = cantidadDisponibleMarca;
+
+            // Verificar que la cantidad ingresada sea válida
+            if (cantidadOperacion > 0) {
+                // Realizar la operación de préstamo
+                if (operacion === "prestar" && cantidadOperacion <= cantidadDisponibleMarca) {
+                    cantidadDisponibleMarca -= cantidadOperacion;
+                    cantidadPrestadaMarca += cantidadOperacion;
+
+                    alert("Se prestaron " + cantidadOperacion + " guitarras " + productoSeleccionado + ". Quedan " + cantidadDisponibleMarca + " en inventario.");
+                // Realizar la operación de devolución
+                } else if (operacion === "devolver" && cantidadOperacion <= cantidadPrestadaMarca) {
+                    cantidadDisponibleMarca += cantidadOperacion;
+                    cantidadPrestadaMarca -= cantidadOperacion;
+
+                    alert("Se devolvieron " + cantidadOperacion + " guitarras " + productoSeleccionado + ". Ahora hay " + cantidadDisponibleMarca + " en inventario.");
+                } else {
+                    alert("Cantidad no válida o insuficiente en inventario para la operación seleccionada.");
+                }
+
+                // Actualizar las cantidades en la tabla
+                document.getElementById("cantidad" + productoSeleccionado + "Disponibles").innerHTML = cantidadDisponibleMarca;
+                document.getElementById("cantidad" + productoSeleccionado + "Prestadas").innerHTML = cantidadPrestadaMarca;
+
+                // Verificar el cambio de color
+                var cantidadDisponibleElement = document.getElementById("cantidad" + productoSeleccionado + "Disponibles");
+
+                if (cantidadDisponibleMarca === 0) {
+                    cantidadDisponibleElement.classList.remove("verde", "amarillo");
+                    cantidadDisponibleElement.classList.add("rojo");
+                } else if (cantidadDisponibleMarca < cantidadOriginalDisponible) {
+                    cantidadDisponibleElement.classList.remove("verde");
+                    cantidadDisponibleElement.classList.add("amarillo");
+                } else {
+                    // Cambiar a verde cuando la cantidad disponible es igual a la cantidad original
+                    cantidadDisponibleElement.classList.remove("amarillo", "rojo");
+                    cantidadDisponibleElement.classList.add("verde");
+                }
+            } else {
+                alert("La cantidad debe ser mayor que cero.");
+            }
+        }
+    </script>
+
+
+
+
+
+    <footer>
+        <a></a>
+        <br><br><br>
+    </footer>
+</body>
+
+</html>

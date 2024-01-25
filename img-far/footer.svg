@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1335 588" width="1335" height="588">
+	<title>footer-svg</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,588,-1335.03,0,667.5,0)">
+			<stop offset="0" stop-color="#354079"/>
+			<stop offset=".13" stop-color="#354079"/>
+			<stop offset=".387" stop-color="#2f4ce4"/>
+			<stop offset=".49" stop-color="#2643da"/>
+			<stop offset=".603" stop-color="#1d3acf"/>
+			<stop offset=".663" stop-color="#1835c9"/>
+			<stop offset=".98" stop-color="#0703f9"/>
+			<stop offset="1" stop-color="#0600fc"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { mix-blend-mode: color;fill: url(#g1) } 
+	</style>
+	<path id="Layer" class="s0" d="m1335 30.7v557.3h-1335v-252.3c350.7-101.7 1073.4-309.8 1158.6-329.1 85.2-19.2 153.1 8 176.4 24.1z"/>
+</svg>

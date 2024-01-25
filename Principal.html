@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB_MUSICA-Sitio-Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+    <script src="script.js" ></script>
+    <!-- Btn Información 1 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("enlace-infor1").addEventListener("click", function (event) {
+                    event.preventDefault();
+                     mostrarInformacionContacto();
+                });
+
+                function mostrarInformacionContacto() {
+                    alert("                                     Información Principal\n\n                         Whatsapp: 75542599 - Guido Aguilera\n                               Facebook: Comunidad Betania\n                                Instagram: comunidadbetania\n                                     Youtube: Betania Bolivia\n\n                             --Developed by RodrigoHM--\n                                     Santa Cruz - Bolivia \n                      © Copyright All Rights Reserved 2024");
+            }
+        });
+    </script>
+    <!-- Sin Tiempo
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("imagen-container");
+
+            function showSlides() {
+                for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+
+                slides[slideIndex].style.display = "block";
+            }
+
+            function plusSlides(n) {
+                slideIndex += n;
+                if (slideIndex >= slides.length) {
+                slideIndex = 0;
+                } else if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+                }
+                showSlides();
+            }
+
+            // Get all elements with the specified classes
+            var leftButtons = document.getElementsByClassName("btn-izquierdo");
+            var rightButtons = document.getElementsByClassName("btn-derecho");
+
+            // Attach listeners to each element
+            for (var i = 0; i < leftButtons.length; i++) {
+                leftButtons[i].addEventListener("click", function () {
+                plusSlides(-1);
+                });
+            }
+
+            for (var i = 0; i < rightButtons.length; i++) {
+                rightButtons[i].addEventListener("click", function () {
+                plusSlides(1);
+                });
+            }
+
+            showSlides(); // Initial display
+            });
+    </script>
+    -->
+
+
+    <!-- Automatizado con 5seg cambiar img -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("imagen-container");
+    
+            function showSlides() {
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+    
+                slides[slideIndex].style.display = "block";
+            }
+    
+            function plusSlides(n) {
+                slideIndex += n;
+                if (slideIndex >= slides.length) {
+                    slideIndex = 0;
+                } else if (slideIndex < 0) {
+                    slideIndex = slides.length - 1;
+                }
+                showSlides();
+            }
+    
+            function autoSlide() {
+                plusSlides(1);
+            }
+    
+            // Get all elements with the specified classes
+            var leftButtons = document.getElementsByClassName("btn-izquierdo");
+            var rightButtons = document.getElementsByClassName("btn-derecho");
+    
+            // Attach listeners to each element
+            for (var i = 0; i < leftButtons.length; i++) {
+                leftButtons[i].addEventListener("click", function () {
+                    plusSlides(-1);
+                });
+            }
+    
+            for (var i = 0; i < rightButtons.length; i++) {
+                rightButtons[i].addEventListener("click", function () {
+                    plusSlides(1);
+                });
+            }
+    
+            showSlides(); // Initial display
+    
+            // Automatic slide change every 5 seconds
+            setInterval(autoSlide, 5000);
+        });
+    </script>
+
+</head>
+
+
+<body>
+        <header>
+            <div class="menu container">
+                <img src="images/Logo con identificativo/Logo Full Color Horizontal.png" alt="" class="logo-cb">
+                <a href="#inicio" class="logo"> </a>
+                <input type="checkbox" id="menu">
+                        <label for="menu">
+                                <img src="images/menu-btn.png" class="menu-icono" alt="">
+                        </label>
+                <nav class="navbar">
+                        <ul>                            <!--target="_blank" //ME ABRE UNA NUEVA PÁG -->
+                            <li><a href="Reservar.html" id="">Reservar</a></li>
+                            <li><a href="Equipos.html" id="">Equipos</a></li>
+                            <li><a href="#Contacto" id="enlace-contacto">Contacto</a></li>
+                        </ul>
+                </nav>
+            </div>        
+        </header>
+
+    <div id="inicio" class="header-content container">
+        <div class="content">
+            <h1> Comunidad Betania</h1>
+            <h2>Levantando Generaciones Para Cristo</h2>
+                  <p>
+                    Servicio de Música               
+                </p>
+                 <a href="#INFORMACION1" id="enlace-infor1" class="btn-1">Información 1</a>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Pie -Navbar-Nosotros -->
+        <script>
+             document.addEventListener("DOMContentLoaded", function () {
+                 document.getElementById("enlace-nosotros-pie").addEventListener("click", function (event) {
+                         event.preventDefault();
+                         mostrarInformacionContacto();
+                 });
+    
+                 function mostrarInformacionContacto() {
+                      alert(" ----------------------- ");                                                                              
+                 } 
+             });
+        </script>
+
+        <!-- Pie - Contenedor -->
+      <div class="container">
+                     
+                 <!-- Cuadro Especial y Lista de Equipos -->
+                 <div class="info-content">
+                     <!-- Contenido existente -->
+                     <div class="info-price">
+                             <h2>Listado de Equipos </h2>
+                             <p class="price">PENDIENTES: NINGUNO</p>
+                             <p> Todos los Equipos estan en Casa Betania</p>
+                            <!--  <p>Fuera de la Ciudad diferente Costo</p>  -->
+                     </div>
+                     <div class="info-txt">
+                         <h2>Equipos no Devueltos</h2>
+                         <p>  NINGUNO </p>
+                         <a href="#" class="btn-1">Informacion</a>
+                     </div>
+                 </div>
+
+                 <hr class="linea-divisora"><!-- Línea Divisora -->
+                 
+                 <!-- Titulo de Pie de Pág. -->
+                 <div class="enlaces">
+                      <h1>Equipos</h1>  
+                      <br><br>
+                      <div class="texto-container"><h1>Carpeta de Equipos</h1> </div>
+                      <br>
+                     <!-- Contenedor Principal -->
+                    <div id="contenedor-imagen-marcas">
+
+                            <!-- Clase Fila Img -->
+                            <div class="imagen-fila">
+                                <!-- button izq -->
+                                <button class="btn-navegacion btn-izquierdo">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                        <!-- Imagenes * Contenedor-->
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Consola Behringer Eurodesk SX2442.png" alt="Descripción de la imagen" width="320">
+                                            <img src="img-Equipos/Consola Behringer Eurodesk SX2442 2.png" alt="Descripción de la imagen" width="600">
+                                            <img src="img-Equipos/Consola Behringer Xenyx X1204.webp" alt="Descripción de la imagen" width="360">
+                                        </div>
+
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Consola Behringer Eurodesk SX2442 2.png" alt="Descripción de la imagen" width="600">
+                                            <img src="img-Equipos/Consola Behringer Xenyx X1204.webp" alt="Descripción de la imagen" width="360">
+                                            <img src="img-Equipos/Consola Midas M32.jpg" alt="Descripción de la imagen" width="360">
+                                            
+                                        </div>
+
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Consola Behringer Xenyx X1204.webp" alt="Descripción de la imagen" width="360">
+                                            <img src="img-Equipos/Consola Midas M32.jpg" alt="Descripción de la imagen" width="360">
+                                            <img src="img-Equipos/Consola Soundcraft Signature 16.jpg" alt="Descripción de la imagen" width="360">
+                                        </div>
+                                        
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Consola Midas M32.jpg" alt="Descripción de la imagen" width="360">
+                                            <img src="img-Equipos/Consola Soundcraft Signature 16.jpg" alt="Descripción de la imagen" width="360">
+                                            <img src="img-Equipos/Estabilizador de corriente Atomlux.jpg" alt="Descripción de la imagen" width="360">
+
+                                        </div>
+
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Consola Soundcraft Signature 16.jpg" alt="Descripción de la imagen" width="360">
+                                            <img src="img-Equipos/Estabilizador de corriente Atomlux.jpg" alt="Descripción de la imagen" width="360">                     
+                                            <img src="img-Equipos/Medusa Quiklock. jpg.jpg" alt="Descripción de la imagen" width="320">
+                                        </div>
+
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Estabilizador de corriente Atomlux.jpg" alt="Descripción de la imagen" width="360">                     
+                                            <img src="img-Equipos/Medusa Quiklock. jpg.jpg" alt="Descripción de la imagen" width="320">
+                                            <img src="img-Equipos/Poderes Europower EP2500.jpg" alt="Descripción de la imagen" width="600">
+                                        </div>
+
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Medusa Quiklock. jpg.jpg" alt="Descripción de la imagen" width="320">
+                                            <img src="img-Equipos/Poderes Europower EP2500.jpg" alt="Descripción de la imagen" width="600">
+                                            <img src="img-Equipos/Consola Behringer Eurodesk SX2442 2.png" alt="Descripción de la imagen" width="360">
+                                        </div>
+
+                                        <div class="imagen-container">
+                                            <img src="img-Equipos/Poderes Europower EP2500.jpg" alt="Descripción de la imagen" width="600">
+                                            <img src="img-Equipos/Consola Behringer Eurodesk SX2442.png" alt="Descripción de la imagen" width="360">
+                                            <img src="img-Equipos/Consola Behringer Eurodesk SX2442 2.png" alt="Descripción de la imagen" width="600">
+                                        </div>
+
+                                <!-- button der -->
+                                <button class="btn-navegacion btn-derecho">
+                                        <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <hr class="linea-divisora"><!-- Línea Divisora -->
+                    </div>
+  
+                 </div>
+
+
+             <Div class="Contenedor-pies">
+                    <!-- NavBar - Correo Nostros Ubicación -->
+                    <div class="info">
+                        <br><br><BR></BR>
+                            <div class="enlace" style="display: flex;">
+                                    <br><br>
+                                    <li><a href="mailto:directorio.btn@gmail.com"><img src="img-far/GMAILLOGO.webp" alt="Correo" width="45"></a></li>
+                                    <li><a href="https://wa.me/+59175542599" target="_blank"><img src="img-far/whatsapp.png" alt="Whatsapp" width="45"></a></li>
+                                    <li><a href="https://www.instagram.com/comunidadbetania/" target="_blank"><img src="img-far/instagram.png" alt="Instagram" width="45"></a></li>
+                                    <li><a href="https://www.facebook.com/betania.bolivia" target="_blank"><img src="img-far/facebook .avif" alt="Facebook" width="45"></a></li>
+                                    <li><a href="https://www.youtube.com/@betaniabolivia" target="_blank"><img src="img-far/youtube.png" alt="Youtube" width="55"></a></li>
+
+                                    <li><a href="#" id="enlace-nosotros-pie">Nosotros</a></li>
+                                    <li><a href="https://acortar.link/lFvmDJ" target="_blank">Ubicación</a></li>                        
+                            </div>
+                    </div>
+
+             </Div>
+
+      </div>        
+    </footer>
+    
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+
+
+

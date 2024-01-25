@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB_MUSICA-Sitio-Web</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+       
+        .navbar {
+        background-color: #4771fb00;
+        padding: 10px; /* Ajusta el relleno según sea necesario */
+        height: 85px; /* Ajusta la altura según tus preferencias */
+        margin-right: 0px;
+        }
+
+        .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+
+        .navbar li {
+        display: block; /* Muestra los elementos como bloques para que estén uno encima del otro */
+        margin-bottom: 0px; /* Ajusta el margen inferior según sea necesario */
+        }
+
+        .navbar a ul li{
+        text-decoration: none;
+        color: rgb(255, 255, 255); /* Puedes cambiar el color del texto según tus preferencias */
+        font-size: 18px; /* Ajusta el tamaño de la fuente según sea necesario */
+        display: block; /* Asegura que los enlaces ocupen todo el ancho del contenedor li */
+        padding: 5px 0;
+        }
+
+        .navbar a:hover {
+        text-decoration: underline; /* Añade subrayado al pasar el ratón sobre los enlaces */
+        }
+        .navbar li:nth-child(2) a {
+        margin-top: -px; /* Ajusta el margen superior para reducir el espacio con el elemento anterior */
+        }
+
+        .menu .navbar ul li a { /*MENU DE RESERVAR, volver*/
+            font-size: 18px;
+            top: 0px;
+            padding: 20px;
+            /*color: #ffa342;*/
+            color: #ffffff;
+            display: block;
+            font-weight: bold; 
+        }
+                
+        .menu .navbar ul li a:hover {
+            color: #ffa342;
+            text-decoration: underline;
+        }
+
+        #contenedor-principal {
+            border: 5px solid rgba(245, 0, 0, 0);
+            display: flex;
+            margin-left: 5%;
+            transform: translateX(0%);
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .texto-container {
+            margin-right: 10px;
+        }
+
+        .imagen-fila {
+            display: flex;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .imagen-container {
+            width: calc(33.33% - 20px); /* Cambiado de 25% a 33.33% para tres imágenes por fila */
+            box-sizing: border-box;
+            margin-right: 20px; /* Espaciado entre imágenes */
+        }
+
+        .imagen-container img {
+            width: 100%;
+            height: auto;
+            
+        }
+        
+    
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="menu container">
+            <img src="images/Logo con identificativo/Positivo con color horizontal.png" alt="" class="logo-cb">
+           
+            <a href="#inicio" class="logo">
+                <h1>Equipos</h1>
+            </a>
+
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu-btn.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Reservar.html" id="">Reservar</a></li>
+                    <li><a href="Principal.html" id="">Volver</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="contenedor-principal">
+        <div class="texto-container">
+            <br><br>
+            <h1>Biblioteca Fotográfica</h1>
+            <br><br>
+        </div>
+
+        <div class="imagen-fila">
+            <div class="imagen-container">
+                <img src="ImgEstancia/3.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/1.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/2.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+        <!-- Repite este patrón para más filas de imágenes -->
+
+        <div class="imagen-fila">
+            <div class="imagen-container">
+                <img src="ImgEstancia/4.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/5.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/6.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+        <!-- Repite este patrón para más filas de imágenes -->
+
+        <div class="imagen-fila">
+            <div class="imagen-container">
+                <img src="ImgEstancia/7.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/8.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/9.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+        <!-- Repite este patrón para más filas de imágenes -->
+
+        <div class="imagen-fila">
+            <div class="imagen-container">
+                <img src="ImgEstancia/10.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/11.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/12.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+        <!-- Repite este patrón para más filas de imágenes -->
+
+        <div class="imagen-fila">
+            <div class="imagen-container">
+                <img src="ImgEstancia/13.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/14.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/15.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+        <!-- Repite este patrón para más filas de imágenes -->
+
+        <div class="imagen-fila">
+            <div class="imagen-container">
+                <img src="ImgEstancia/16.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/9.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/18.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+        <!-- Repite este patrón para más filas de imágenes -->
+
+        <div class="imagen-fila">
+            <div class="imagen-container">
+                <img src="ImgEstancia/19.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/17.png" alt="Descripción de la imagen">
+            </div>
+            <div class="imagen-container">
+                <img src="ImgEstancia/3.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+        <!-- Repite este patrón para más filas de imágenes -->
+
+    </div>
+
+    <footer>
+        <a></a>
+    </footer>
+</body>
+
+</html>
